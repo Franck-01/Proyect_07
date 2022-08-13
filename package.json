@@ -1,0 +1,27 @@
+{
+  "name": "proyect_07",
+  "version": "1.0.0",
+  "description": "My first project with a great future / Mi primer proyecto con gran futuro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Franck-01/Proyect_07.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Franck-01/Proyect_07/issues"
+  },
+  "homepage": "https://github.com/Franck-01/Proyect_07#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0"
+  }
+}
