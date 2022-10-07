@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>E-Commers</title>
+</head>
+<body class="e-commers">
+<header>
+    <a href="/" >
+        <img src="https://raw.githubusercontent.com/Franck-01/Project-SW/master/public/images/SWTFA.png"/>
+    </a>
+    <h2>Escoje tus naves, inspecciona el arsenal y crea la flota mas poderosa que la galaxia haya visto</h2>
+</header>
+<main>
+    <h1 class="pad_div">Naves a seleccionar</h1>
+    <section>
+        <% products.forEach(product =>{ %>
+        <div>
+            <h2><%=product.name %></h2>
+            <h4><%=product.model %></h4>
+            <h2><%=product.faction %></h2>
+            <img src="<%=product.url%>">
+            <p><%=product.description %></p>
+            <p>price: <%=product.price %></p>
+            <p>stock: <%=product.stock %></p>
+            <h3><button onclick = "agregar('<%=product.id%>')">Agregar</h3>
+        </div>
+        <% }) %> 
+    </section>
+<form action = "/cart" method = "get">
+    <button type="submit" class="btn btn-dark">Ir a Mi carrito</button>
+<form>
+    <a href="/creator">Ir al creador</a>
+<script>
+function agregar(product){
+    fetch(`http://localhost:3090/cart/${product}`,{
+        method: 'POST',
+        body: JSON.stringify(product),
+    })
+}
+</script>
+</main>
+<style>
+.e-commers{
+    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/exegol-1578431600.png?crop=0.832xw:1.00xh;0.0978xw,0&resize=1200:*");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    height: 100%;
+    background-size: cover;
+    color:white;
+    text-align: center;
+}
+.e-commers header{
+    background-color: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+.e-commers header img{
+    height: 30%;
+    width: 80%;
+}
+.e-commers header h2{
+    font-size: 26px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.e-commers main{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.e-commers main .pad_div{
+    padding-bottom: 1%;
+    padding-top: 1%;
+    font-size: 26px;
+}
+.e-commers main section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    padding: 10%;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.e-commers main section div img{
+    height: 40%;
+    width: 60%;
+}
+.e-commers main section div{
+    border: 2px solid #ffffff;
+    padding: 2%;
+    margin: 2%;
+    text-align: center;
+    width: 40%;
+    height: auto;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,0) 0%, rgba(6,23,145,1) 57%, rgba(0,0,0,1) 100%);
+    border-radius: 10px;
+}
+@media screen and (max-width: 768px){
+    .e-commers main section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: wrap;
+        padding: 10%;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    .e-commers main section div{
+        border: 2px solid #ffffff;
+        padding: 2%;
+        margin: 2%;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        background: rgb(2,0,36);
+        background: radial-gradient(circle, rgba(2,0,36,0) 0%, rgba(6,23,145,1) 57%, rgba(0,0,0,1) 100%);
+        border-radius: 10px;
+    }
+}
+@media screen and (max-width: 600px){
+    .e-commers header img{
+        height: 50%;
+        width: 80%;
+    }
+    .ecommers{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .e-commers main section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: wrap;
+        padding: 10%;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    .e-commers main section div{
+        border: 2px solid #ffffff;
+        padding: 2%;
+        margin: 2%;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        background: rgb(255,255,255);
+        background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(154,8,8,1) 38%, rgba(0,0,0,1) 87%);
+        border-radius: 10px;
+    }
+}
+</style>
+</body>
+</html>

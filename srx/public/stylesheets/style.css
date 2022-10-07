@@ -1,0 +1,698 @@
+.principal_fondo{
+   background-image: url("https://sm.ign.com/t/ign_latam/screenshot/default/vader1_ty7m.1280.jpg");
+   background-repeat: no-repeat;
+   background-position: center top;
+   background-attachment: fixed;
+   height: 100%;
+   background-size: cover;
+   padding-right: 2%;
+   padding-left: 2%;
+   color: black;
+}
+.principal_fondo header{
+   text-align: center;
+   padding-top: 5%;
+   padding-bottom: 5%;
+}
+.principal_fondo header a{
+   font-family: 'Bree Serif', serif;
+   font-size: 24px;
+   padding: 5%;
+}
+.principal_fondo header div{
+   font-style: oblique; 
+   padding: 5%;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+.principal_fondo .grid{
+   display: grid;
+   align-content: stretch;
+   justify-items: stretch;
+   justify-content: stretch;
+   grid-template-areas: 
+      "nav h2"
+      "nav main";
+   grid-template-columns: 35% 65%;
+   gap:2%;
+}
+.principal_fondo header div:hover{
+   background-image: url("https://www.logolynx.com/images/logolynx/46/466b40882cc9a58ff5756e14032101c6.jpeg");
+   background-size: cover;
+   color: white;
+   text-transform: uppercase;
+   padding-right: 5%;
+   padding-left: 5%;
+   padding-top: 5%;
+   padding-bottom: 5%;
+   font-family: 'Shadows Into Light Two', cursive;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+.principal_fondo .grid nav{
+   background-image: url("https://i.pinimg.com/originals/94/bc/07/94bc076520233b2021e4bf5e4fbe8bef.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+.principal_fondo .grid nav h3{
+   justify-self: stretch;
+   margin-right: 3%;
+   margin-left: 3%;
+   padding-bottom: 5%;
+   text-align: justify;
+   color: white;
+   font-family: 'Orbitron', sans-serif;
+}
+.principal_fondo .rep:hover{
+   background-repeat: no-repeat;
+   background-image: url("http://pm1.narvii.com/6285/0abadec238bd7f41a9348356f40bb891411416b7_00.jpg");
+   background-position: center;
+   background-size: cover;
+   color: white;
+   text-align: center;
+   font-family: 'Orbitron', sans-serif;
+}
+.principal_fondo .csi:hover{
+   background-repeat: no-repeat;
+   background-image: url("https://pm1.narvii.com/6439/4b30c61839e4d26bf630955bcc4e0d6b2d625fd6_hq.jpg");
+   background-position: center;
+   background-size: cover;
+   color: white;
+   text-align: center;
+   font-family: 'Orbitron', sans-serif;
+}
+.principal_fondo .imp:hover{
+   background-repeat: no-repeat;
+   background-image: url("http://pm1.narvii.com/6234/ea8781f4d3eb3cd255ff518b8ebb9fb815624f94_00.jpg");
+   background-position: center;
+   background-size: cover;
+   color: white;
+   text-align: center;
+   font-family: 'Orbitron', sans-serif;
+}
+.principal_fondo .reb:hover{
+   background-repeat: no-repeat;
+   background-image: url("https://wallpapercave.com/wp/wp2149431.jpg");
+   background-position: center;
+   background-size: cover;
+   color: white;
+   text-align: center;
+   font-family: 'Orbitron', sans-serif;
+}
+.principal_fondo .jedi:hover{
+    background-repeat: no-repeat;
+   background-image: url("https://w0.peakpx.com/wallpaper/865/584/HD-wallpaper-jedi-star-wars-logo-star.jpg");
+   background-position: center;
+   background-size: cover;
+   color: white;
+   text-align: center;
+   font-family: 'Orbitron', sans-serif;
+}
+.principal_fondo .sith:hover{
+   background-repeat: no-repeat;
+   background-image: url("https://pm1.narvii.com/6906/9ee3c63e40a56acd09967908ac1474c466e22d29r1-1280-800v2_hq.jpg");
+   background-position: center;
+   background-size: cover;
+   color: white;
+   text-align: center;
+   font-family: 'Orbitron', sans-serif;
+}
+.principal_fondo .grid main{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   flex-flow: wrap;
+   align-items: center;
+   justify-content: space-between;
+   text-align: center;
+   font-size: 18px;
+}
+.principal_fondo .grid main div{
+   border: 2px solid #ffffff00;
+   margin: 2%;
+   width: 40%;
+   height: auto;
+   border-radius: 10px;
+   font-family: 'Bree Serif', serif;
+}
+.principal_fondo main h2{
+   font-family: 'Kanit', sans-serif;
+   text-align: center;
+}
+.principal_fondo .grid main div img{
+   height: auto;
+   width: 100%;
+}
+@media screen and (max-width: 768px){
+   .principal_fondo .grid main{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      flex-flow: wrap;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      font-size: 18px;
+   }
+   .principal_fondo .grid main div{
+      border: 2px solid #ffffff00;
+      margin: 2%;
+      width: 80%;
+      height: auto;
+      border-radius: 10px;
+      font-family: 'Bree Serif', serif;
+   }
+}
+@media screen and (max-width: 600px){
+   .principal_fondo .grid{
+      display: grid;
+      align-content: stretch;
+      justify-items: stretch;
+      justify-content: stretch;
+      grid-template-rows: auto auto;
+      grid-template-columns: 100%;
+      grid-template-areas: 
+         "nav"
+         "main";
+      gap:2%;
+   }
+   .principal_fondo .grid nav{
+      background-image: url("https://i.pinimg.com/originals/94/bc/07/94bc076520233b2021e4bf5e4fbe8bef.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+   }
+   .principal_fondo .grid nav h3{
+      justify-self: stretch;
+      margin-right: 3%;
+      margin-left: 3%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      text-align: justify;
+      color: white;
+      font-family: 'Orbitron', sans-serif;
+   }
+}
+
+
+.e-commers{
+   background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/exegol-1578431600.png?crop=0.832xw:1.00xh;0.0978xw,0&resize=1200:*");
+   background-repeat: no-repeat;
+   background-position: center top;
+   background-attachment: fixed;
+   height: 100%;
+   background-size: cover;
+   color:white;
+   text-align: center;
+}
+.e-commers header{
+   background-color: black;
+   padding-top: 5%;
+   padding-bottom: 5%;
+   padding-right: 10%;
+   padding-left: 10%;
+}
+.e-commers header img{
+   height: 30%;
+   width: 80%;
+}
+.e-commers header h2{
+   font-size: 26px;
+   padding-top: 4%;
+   padding-bottom: 4%;
+}
+.e-commers main{
+   padding-top: 2%;
+   padding-bottom: 2%;
+}
+.e-commers main .pad_div{
+   padding-bottom: 1%;
+   padding-top: 1%;
+   font-size: 26px;
+}
+.e-commers main section{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   flex-flow: wrap;
+   padding: 10%;
+   align-items: baseline;
+   justify-content: space-between;
+}
+.e-commers main section div img{
+   height: 40%;
+   width: 60%;
+}
+.e-commers main section div{
+   border: 2px solid #ffffff;
+   padding: 2%;
+   margin: 2%;
+   text-align: center;
+   width: 40%;
+   height: auto;
+   background: rgb(2,0,36);
+   background: radial-gradient(circle, rgba(2,0,36,0) 0%, rgba(6,23,145,1) 57%, rgba(0,0,0,1) 100%);
+   border-radius: 10px;
+}
+.e-commers .cronica{
+   padding: 2%;
+   margin: 2%;
+   height: auto;
+   border-radius: 10px;
+   height: 60%;
+   width: 80%;
+}
+.e-commers .rep:hover{
+   background-repeat: no-repeat;
+   background-image: url("http://pm1.narvii.com/6285/0abadec238bd7f41a9348356f40bb891411416b7_00.jpg");
+   background-position: center;
+   background-size: cover;
+   height: 100%;
+   color: white;
+   text-align: center;
+}
+.e-commers .csi:hover{
+   background-repeat: no-repeat;
+   background-image: url("https://pm1.narvii.com/6439/4b30c61839e4d26bf630955bcc4e0d6b2d625fd6_hq.jpg");
+   background-position: center;
+   background-size: cover;
+   height: 100%;
+   color: white;
+   text-align: center;
+}
+.e-commers .imp:hover{
+   background-repeat: no-repeat;
+   background-image: url("http://pm1.narvii.com/6234/ea8781f4d3eb3cd255ff518b8ebb9fb815624f94_00.jpg");
+   background-position: center;
+   background-size: cover;
+   height: 100%;
+   color: white;
+   text-align: center;
+}
+.e-commers .reb:hover{
+   background-repeat: no-repeat;
+   background-image: url("https://wallpapercave.com/wp/wp2149431.jpg");
+   background-position: center;
+   background-size: cover;
+   height: 100%;
+   color: white;
+   text-align: center;
+}
+@media screen and (max-width: 768px){
+   .e-commers main section{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex-flow: wrap;
+      padding: 10%;
+      align-items: baseline;
+      justify-content: space-between;
+   }
+   .e-commers main section div{
+      border: 2px solid #ffffff;
+      padding: 2%;
+      margin: 2%;
+      text-align: center;
+      width: 100%;
+      height: auto;
+      background: rgb(2,0,36);
+      background: radial-gradient(circle, rgba(2,0,36,0) 0%, rgba(6,23,145,1) 57%, rgba(0,0,0,1) 100%);
+      border-radius: 10px;
+   }
+}
+@media screen and (max-width: 600px){
+   .e-commers header img{
+      height: 50%;
+      width: 80%;
+   }
+   .ecommers{
+      margin-left: 5%;
+      margin-right: 5%;
+   }
+   .e-commers main section{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex-flow: wrap;
+      padding: 10%;
+      align-items: baseline;
+      justify-content: space-between;
+   }
+   .e-commers main section div{
+      border: 2px solid #ffffff;
+      padding: 2%;
+      margin: 2%;
+      text-align: center;
+      width: 100%;
+      height: auto;
+      background: rgb(255,255,255);
+      background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(154,8,8,1) 38%, rgba(0,0,0,1) 87%);
+      border-radius: 10px;
+   }
+}
+
+.republic_fondo{
+   background-image: url("https://www.starwarsnewsnet.com/wp-content/uploads/2021/11/Star-Wars-The-Old-Republic-Action-Scene.png");
+   background-repeat: no-repeat;
+   background-position: center top;
+   background-attachment: fixed;
+   height: 100%;
+   background-size: cover;
+   color:white;
+   text-align: center;
+   padding-top: 3%;
+   padding-left: 5%;
+   padding-right: 5%;
+}
+.republic_fondo header{
+   font-size: 24px;
+   font-family: 'Orbitron', sans-serif;
+}
+.republic_fondo main{
+   font-family: 'Bree Serif', serif;
+   font-size: 26px;
+}
+.republic_fondo main p{
+   font-family: 'Bree Serif', serif;
+   font-size: 20px;
+   text-align: justify;
+   padding-left: 3%;
+   padding-right: 3%;
+}
+.republic_fondo main p:hover{
+   color: #1e03b6;
+}
+.republic_fondo section div{
+   background-image: url("https://gcdn.lanetaneta.com/wp-content/uploads/2019/07/Send-In-The-Clones-10-preguntas-sobre-los-soldados-clon-780x405.jpg");
+   background-repeat: no-repeat;
+   background-position: center top;
+   background-attachment: fixed;
+   height: 100%;
+   background-size: cover;
+   color:white;
+   text-align: center;
+   padding: 3%;
+}
+.republic_fondo .padding_create{
+   padding-top: 5%;
+   padding-bottom: 10%;
+   padding-left: 5%;
+   padding-right: 5%;
+}
+.republic_fondo section .kamino{
+   background-image: url("https://live.staticflickr.com/5654/30747840391_f65e3987a9_b.jpg");
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-position: center;
+   font-family: 'DM Serif Display', serif;
+   font-size: 20px;
+}
+.republic_fondo .anton{
+   font-family: 'Anton', sans-serif;
+   font-size: 36px;
+}
+.republic_fondo section .geonosis{
+   background-image: url("../img/ataque_geonosis.jpg");
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-position: center;
+   font-family: 'DM Serif Display', serif;
+   font-size: 20px;
+}
+.republic_fondo section div div{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   flex-flow: wrap;
+   align-items: baseline;
+   justify-content: center;
+}
+.republic_fondo section div  h3{
+   font-family: 'Orbitron', sans-serif;
+}
+.republic_fondo section .orbitron{
+   font-family: 'Orbitron', sans-serif;
+   color: black;
+   font-weight: bold;
+   border: 10px dashed black;
+   padding: 2%;
+   margin: 6%;
+   text-transform: uppercase;
+   background: black;
+   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, white 50%);
+}
+.republic_fondo section .orbitron:hover{
+   font-family: 'Orbitron', sans-serif;
+   transition: all 500ms ease-out;
+   color: white;
+   font-weight: bold;
+   border: 10px dashed white;
+   background: black;
+   background: linear-gradient(90deg, black 50%, rgba(255, 255, 255, 0) 100%);
+}
+.republic_fondo section div h4{
+   margin: 2%;
+}
+.republic_fondo section div div .cart{
+   border: 2px solid #ffffff;
+   padding-left: 5%;
+   padding-right: 5%;
+   margin: 2%;
+   text-align: center;
+   width: 45%;
+   height: auto;
+   border-radius: 10px;
+   font-family: 'Bree Serif', serif;
+}
+.republic_fondo section div div .transition{
+   transform: scale(1);
+}
+.republic_fondo section div div .transition:hover{
+   transform: scale(1.2);
+  transition: all 500ms ease-out;
+}
+.republic_fondo section div div .marines_4{
+   background-image: url("../img/4_ejercito_de_sector.jpg");
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-position: center;
+}
+.republic_fondo section div div .marines_4:hover{
+   border: 6px dashed rgb(79, 0, 110);
+   color: rgb(255, 133, 204);
+}
+.republic_fondo section div div .batall_212{
+   background-image: url("https://pbs.twimg.com/media/FPGdzSGXoAMN1XF.jpg");
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-position: center;
+}
+.republic_fondo section div div .batall_212:hover{
+   border: 6px dashed rgb(255, 187, 0);
+   color: rgb(255, 187, 0);
+}
+.republic_fondo section div div .elite_41{
+   background-image: url("https://pm1.narvii.com/6978/7c22923d4a21ce46cdebe4a7232b68677e364635r1-1920-1080v2_hq.jpg");
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-position: center;
+}
+.republic_fondo section div div .elite_41:hover{
+   border: 6px dashed rgb(0, 82, 24);
+   color: rgb(3, 143, 45);
+}
+.republic_fondo section div div .movil_91{
+   background-image: url("../img/91_cuerpo_de_reconocimiento_movil.jpg");
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-position: center;
+}
+.republic_fondo section div div .movil_91:hover{
+   border: 6px dashed rgb(255, 255, 255);
+   color: rgb(243, 66, 66);
+}
+.republic_fondo section div div .star_327{
+   background-image: url("../img/327_cuerpo_estelar.jpg");
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-position: center;
+}
+.republic_fondo section div div .star_327:hover{
+   border: 6px dashed rgb(99, 76, 3);
+   color: rgb(255, 166, 0);
+}
+.republic_fondo section div div .legion_501{
+   background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a0853385-8a52-4b79-89c3-ffe5a26ba950/de6ztm6-d8cf094b-c766-4445-bc95-04a56aac9704.jpg/v1/fill/w_1192,h_670,q_70,strp/star_wars___anakin_skywalker_and_the_501st_by_andibaze_de6ztm6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvYTA4NTMzODUtOGE1Mi00Yjc5LTg5YzMtZmZlNWEyNmJhOTUwXC9kZTZ6dG02LWQ4Y2YwOTRiLWM3NjYtNDQ0NS1iYzk1LTA0YTU2YWFjOTcwNC5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.1yoWxSrwnL1I0mBbjF__syOJpTwuzEl419rpZeeCmwE");
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-position: center;
+}
+.republic_fondo section div div .legion_501:hover{
+   border: 6px dashed rgb(0, 18, 184);
+   color: rgb(18, 123, 243);
+}
+.republic_fondo section div div .legion_501 .company_322{
+   background-image: url("https://i.pinimg.com/originals/f8/76/48/f876482ebf67ec287cd0462f52f29b80.jpg");
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-position: center;
+}
+.republic_fondo section div div .legion_501 .company_322:hover{
+   color: rgb(192, 103, 1);
+}
+.republic_fondo section div div .batall_104{
+   background-image: url("https://pm1.narvii.com/6621/f4ac126824d448213976bc049bc9cc0fa5d9c307_hq.jpg");
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-position: center;
+}
+.republic_fondo section div div .batall_104:hover{
+   border: 6px dashed rgb(63, 63, 63);
+   color: rgb(255, 255, 255);
+}
+.republic_fondo section div div .coruscant{
+   background-image: url("https://wallpapercave.com/wp/wp2069345.jpg");
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-position: center;
+}
+.republic_fondo section div div .coruscant:hover{
+   border: 6px dashed rgb(70, 0, 0);
+   color: rgb(255, 0, 0);
+}
+.republic_fondo section div div .bad_99{
+   background-image: url("https://lumiere-a.akamaihd.net/v1/images/610be24859bb270001e56d7c-image_5d11d124.jpeg?region=0%2C0%2C1536%2C864");
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-position: center;
+}
+.republic_fondo section div div .bad_99:hover{
+   border: 6px dashed rgb(0, 0, 0);
+   color: rgb(150, 5, 5);
+}
+.republic_fondo section div div .delta{
+   background-image: url("https://images.squarespace-cdn.com/content/v1/5fbc4a62c2150e62cfcb09aa/ab756c56-8442-4f7c-a304-c7db1eec3c6c/658109-star-wars-republic-commando-sci-fi-strategy-tactical-shooter-action-fighting-1swrc-1.jpg");
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-position: center;
+}
+.republic_fondo section div div .delta:hover{
+   border: 6px dashed rgb(255, 255, 255);
+   color: rgb(207, 5, 5);
+   font-weight: bolder;
+}
+@media screen and (max-width: 768px){
+   .republic_fondo section div div .cart{
+      border: 2px solid #ffffff;
+      padding-left: 5%;
+      padding-right: 5%;
+      margin: 2%;
+      text-align: center;
+      width: 90%;
+      height: auto;
+      border-radius: 10px;
+      font-family: 'Bree Serif', serif;
+   }
+   .republic_fondo section div div .marines_4:hover{
+      border: 6px dashed rgb(79, 0, 110);
+      color: rgb(255, 133, 204);
+   }
+   .republic_fondo section div div .batall_212:hover{
+      border: 6px dashed rgb(255, 187, 0);
+      color: rgb(255, 187, 0);
+   }
+   .republic_fondo section div div .elite_41:hover{
+      border: 6px dashed rgb(0, 82, 24);
+      color: rgb(3, 143, 45);
+   }
+   .republic_fondo section div div .movil_91:hover{
+      border: 6px dashed rgb(255, 255, 255);
+      color: rgb(243, 66, 66);
+   }
+   .republic_fondo section div div .star_327:hover{
+      border: 6px dashed rgb(99, 76, 3);
+      color: rgb(255, 166, 0);
+   }
+   .republic_fondo section div div .legion_501:hover{
+      border: 6px dashed rgb(0, 18, 184);
+      color: rgb(18, 123, 243);
+   }
+   .republic_fondo section div div .legion_501 .company_322:hover{
+      color: rgb(192, 103, 1);
+   }
+   .republic_fondo section div div .batall_104:hover{
+      border: 6px dashed rgb(63, 63, 63);
+      color: rgb(255, 255, 255);
+   }
+   .republic_fondo section div div .coruscant:hover{
+      border: 6px dashed rgb(70, 0, 0);
+      color: rgb(255, 0, 0);
+   }
+   .republic_fondo section div div .bad_99:hover{
+      border: 6px dashed rgb(0, 0, 0);
+      color: rgb(150, 5, 5);
+   }
+   .republic_fondo section div div .delta:hover{
+      border: 6px dashed rgb(255, 255, 255);
+      color: rgb(207, 5, 5);
+      font-weight: bolder;
+   }
+}
+@media screen and (max-width: 600px){
+   .republic_fondo section div div .cart{
+      border: 2px solid #ffffff;
+      padding-left: 5%;
+      padding-right: 5%;
+      margin: 2%;
+      text-align: center;
+      width: 90%;
+      height: auto;
+      border-radius: 10px;
+      font-family: 'Bree Serif', serif;
+   }
+   .republic_fondo section div div .marines_4:hover{
+      border: 6px dashed rgb(79, 0, 110);
+      color: rgb(255, 133, 204);
+   }
+   .republic_fondo section div div .batall_212:hover{
+      border: 6px dashed rgb(255, 187, 0);
+      color: rgb(255, 187, 0);
+   }
+   .republic_fondo section div div .elite_41:hover{
+      border: 6px dashed rgb(0, 82, 24);
+      color: rgb(3, 143, 45);
+   }
+   .republic_fondo section div div .movil_91:hover{
+      border: 6px dashed rgb(255, 255, 255);
+      color: rgb(243, 66, 66);
+   }
+   .republic_fondo section div div .star_327:hover{
+      border: 6px dashed rgb(99, 76, 3);
+      color: rgb(255, 166, 0);
+   }
+   .republic_fondo section div div .legion_501:hover{
+      border: 6px dashed rgb(0, 18, 184);
+      color: rgb(18, 123, 243);
+   }
+   .republic_fondo section div div .legion_501 .company_322:hover{
+      color: rgb(192, 103, 1);
+   }
+   .republic_fondo section div div .batall_104:hover{
+      border: 6px dashed rgb(63, 63, 63);
+      color: rgb(255, 255, 255);
+   }
+   .republic_fondo section div div .coruscant:hover{
+      border: 6px dashed rgb(70, 0, 0);
+      color: rgb(255, 0, 0);
+   }
+   .republic_fondo section div div .bad_99:hover{
+      border: 6px dashed rgb(0, 0, 0);
+      color: rgb(150, 5, 5);
+   }
+   .republic_fondo section div div .delta:hover{
+      border: 6px dashed rgb(255, 255, 255);
+      color: rgb(207, 5, 5);
+      font-weight: bolder;
+   }
+}

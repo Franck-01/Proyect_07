@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'/>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Kanit&family=Orbitron:wght@500&family=Reem+Kufi+Ink&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body class="principal_fondo">
+<div>
+   <%- include('./nav'); %>
+</div>
+<header>
+   <h1>STAR WARS</h1>
+   <a href="/products">E-Commers</a>
+   <div>
+       <h5>La informacion incluye desde el episodio 2 hasta el episodio 6 (incluyendo comics, series y juegos)</h5>
+       <h5>Es decir (para los fanaticos), desde el primer ataque a Geonosis, hasta la batalla de Jakku</h5>
+   </div>
+</header>
+<div class="grid">
+   <nav>
+      <a href="/republic">
+         <h3 class="rep">REPUBLICA GALACTICA</h3>
+      </a>
+      <a href="/csi">
+         <h3 class="csi">C.S.I</h3>
+      </a>
+      <a href="/empire">
+         <h3 class="imp">IMPERIO GALACTICO</h3>
+      </a>
+      <a href="/rebellion">
+         <h3 class="reb">ALIANZA REBELDE</h3>
+      </a>
+      <a href="/jedis">
+         <h3 class="jedi">ORDEN JEDI</h3>
+      </a>
+      <a href="/siths">
+         <h3 class="sith">SITHS</h3>
+      </a>
+   </nav>
+   <main>
+      <div>
+            <h3>GUERRA DE LOS CLONES</h3>
+            <p>Episodio 2, hasta the clone wars/episodio 3</p></br>
+      </div>
+      <div>
+            <img src="https://media.contentapi.ea.com/content/dam/walrus/common/21-bf2-header-xlg.jpg.adapt.crop191x100.628p.jpg">
+      </div>
+      <div>
+            <h3>ETAPA ENTRE GUERRAS</h3>
+            <p>the bad batch, jedi fallen order, obi wan kenobi, rebels, comics de darth vader, Rogue One</p></br>
+      </div>
+      <div>
+            <img src="https://pm1.narvii.com/7488/39520770c0c8e578f967c7023082d9eba97d0c58r1-1920-1044v2_hq.jpg">
+      </div>
+      <div>
+            <h3>GUERRA CIVIL GALACTICA</h3>
+            <p>episodio 4, 5, 6, battlefront 2, mandalorian</p></br>
+      </div>
+      <div>
+            <img src="https://labibliotecadeltemplojedi.files.wordpress.com/2020/05/timeline158.png?w=995">
+      </div>
+   </main>
+</div>
+<style>
+.principal_fondo{
+   background-image: url("https://sm.ign.com/t/ign_latam/screenshot/default/vader1_ty7m.1280.jpg");
+   background-repeat: no-repeat;
+   background-position: center top;
+   background-attachment: fixed;
+   height: 100%;
+   background-size: cover;
+   padding-right: 2%;
+   padding-left: 2%;
+   color: black;
+}
+.principal_fondo header{
+   text-align: center;
+   padding-top: 5%;
+   padding-bottom: 5%;
+}
+.principal_fondo header a{
+   font-family: 'Bree Serif', serif;
+   font-size: 24px;
+   padding: 5%;
+}
+.principal_fondo header div{
+   font-style: oblique; 
+   padding: 5%;
+   text-transform: uppercase;
+   font-weight: bolder;
+}
+.principal_fondo header div h5{
+   font-size: 24px;
+}
+.principal_fondo .grid{
+   display: grid;
+   align-content: stretch;
+   justify-items: stretch;
+   justify-content: stretch;
+   grid-template-areas: 
+   "nav h2"
+   "nav main";
+   grid-template-columns: 35% 65%;
+   gap:2%;
+}
+.principal_fondo header div:hover{
+   background-image: url("https://www.logolynx.com/images/logolynx/46/466b40882cc9a58ff5756e14032101c6.jpeg");
+   background-size: cover;
+   color: white;
+   text-transform: uppercase;
+   padding-right: 5%;
+   padding-left: 5%;
+   padding-top: 5%;
+   padding-bottom: 5%;
+   font-family: 'Shadows Into Light Two', cursive;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+.principal_fondo .grid nav{
+   background-image: url("https://i.pinimg.com/originals/94/bc/07/94bc076520233b2021e4bf5e4fbe8bef.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+.principal_fondo .grid nav h3{
+   justify-self: stretch;
+   margin-right: 3%;
+   margin-left: 3%;
+   padding-bottom: 5%;
+   text-align: justify;
+   color: white;
+   font-family: 'Orbitron', sans-serif;
+}
+.principal_fondo .rep:hover{
+   background-repeat: no-repeat;
+   background-image: url("http://pm1.narvii.com/6285/0abadec238bd7f41a9348356f40bb891411416b7_00.jpg");
+   background-position: center;
+   background-size: cover;
+   color: white;
+   text-align: center;
+   font-family: 'Orbitron', sans-serif;
+}
+.principal_fondo .csi:hover{
+   background-repeat: no-repeat;
+   background-image: url("https://pm1.narvii.com/6439/4b30c61839e4d26bf630955bcc4e0d6b2d625fd6_hq.jpg");
+   background-position: center;
+   background-size: cover;
+   color: white;
+   text-align: center;
+   font-family: 'Orbitron', sans-serif;
+}
+.principal_fondo .imp:hover{
+   background-repeat: no-repeat;
+   background-image: url("http://pm1.narvii.com/6234/ea8781f4d3eb3cd255ff518b8ebb9fb815624f94_00.jpg");
+   background-position: center;
+   background-size: cover;
+   color: white;
+   text-align: center;
+   font-family: 'Orbitron', sans-serif;
+}
+.principal_fondo .reb:hover{
+   background-repeat: no-repeat;
+   background-image: url("https://wallpapercave.com/wp/wp2149431.jpg");
+   background-position: center;
+   background-size: cover;
+   color: white;
+   text-align: center;
+   font-family: 'Orbitron', sans-serif;
+}
+.principal_fondo .jedi:hover{
+   background-repeat: no-repeat;
+   background-image: url("https://w0.peakpx.com/wallpaper/865/584/HD-wallpaper-jedi-star-wars-logo-star.jpg");
+   background-position: center;
+   background-size: cover;
+   color: white;
+   text-align: center;
+   font-family: 'Orbitron', sans-serif;
+}
+.principal_fondo .sith:hover{
+   background-repeat: no-repeat;
+   background-image: url("https://pm1.narvii.com/6906/9ee3c63e40a56acd09967908ac1474c466e22d29r1-1280-800v2_hq.jpg");
+   background-position: center;
+   background-size: cover;
+   color: white;
+   text-align: center;
+   font-family: 'Orbitron', sans-serif;
+}
+.principal_fondo .grid main{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   flex-flow: wrap;
+   align-items: center;
+   justify-content: space-between;
+   text-align: center;
+   font-size: 18px;
+}
+.principal_fondo .grid main div{
+   border: 2px solid #ffffff00;
+   margin: 2%;
+   width: 40%;
+   height: auto;
+   border-radius: 10px;
+   font-family: 'Bree Serif', serif;
+}
+.principal_fondo main h2{
+   font-family: 'Kanit', sans-serif;
+   text-align: center;
+}
+.principal_fondo .grid main div img{
+   height: auto;
+   width: 100%;
+}
+@media screen and (max-width: 768px){
+   .principal_fondo .grid main{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      flex-flow: wrap;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      font-size: 18px;
+   }
+   .principal_fondo .grid main div{
+      border: 2px solid #ffffff00;
+      margin: 2%;
+      width: 80%;
+      height: auto;
+      border-radius: 10px;
+      font-family: 'Bree Serif', serif;
+   }
+}
+@media screen and (max-width: 600px){
+   .principal_fondo .grid{
+      display: grid;
+      align-content: stretch;
+      justify-items: stretch;
+      justify-content: stretch;
+      grid-template-rows: auto auto;
+      grid-template-columns: 100%;
+      grid-template-areas: 
+         "nav"
+         "main";
+      gap:2%;
+   }
+   .principal_fondo .grid nav{
+      background-image: url("https://i.pinimg.com/originals/94/bc/07/94bc076520233b2021e4bf5e4fbe8bef.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+   }
+   .principal_fondo .grid nav h3{
+      justify-self: stretch;
+      margin-right: 3%;
+      margin-left: 3%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      text-align: justify;
+      color: white;
+      font-family: 'Orbitron', sans-serif;
+   }
+}
+</style>
+</body>
+</html>
